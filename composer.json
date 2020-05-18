@@ -1,0 +1,34 @@
+{
+    "name": "digitalkonsultindo/datatable-ssp",
+    "description": "DataTable SSP (PHP) for Laravel. This package allows you to manage your DataTable from server-side in Laravel app.",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DigitalKonsultindo",
+            "email": "info@digitalkonsultindo.co.id"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DigitalKonsultindo\\DataTable\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DigitalKonsultindo\\DataTable\\DataTableServiceProvider"
+            ]
+        }
+    }
+}
